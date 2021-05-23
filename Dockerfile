@@ -22,7 +22,7 @@ RUN cd xmlrpc-c-${XMLRPC_VERSION}/tools/xmlrpc && \
 ADD mod_fastcgi.conf /etc/lighttpd/mod_fastcgi.conf
 ADD lighttpd.conf /etc/lighttpd/lighttpd.conf
 
-RUN addgroup -S ${USER}
+RUN addgroup -S ${USER} -g ${GID}
 RUN adduser \
     --disabled-password \
     --gecos "" \
