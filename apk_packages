@@ -1,0 +1,15 @@
+autoconf
+curl
+curl
+curl-dev
+g++
+gcc
+git
+libcurl
+lighttpd
+make
+musl-dev
+php8
+php8-cgi
+php8-fpm
+rtorrent
