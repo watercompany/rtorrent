@@ -53,4 +53,4 @@ EXPOSE 80
 EXPOSE 9090
 EXPOSE 50000
 
-CMD [ "ash", "/home/rtorrent/entrypoint.sh" ]
+CMD [ "bash", "/home/rtorrent/entrypoint.sh" ]

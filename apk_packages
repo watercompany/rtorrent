@@ -1,4 +1,5 @@
 autoconf
+bash
 curl
 curl
 curl-dev
