@@ -5,6 +5,7 @@ curl-dev
 g++
 gcc
 git
+go
 libcurl
 lighttpd
 make

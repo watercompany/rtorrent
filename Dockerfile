@@ -45,7 +45,12 @@ RUN chown -R ${USER}:${USER} /var/log/lighttpd
 ADD rtorrent.rc ./.rtorrent.rc
 ADD entrypoint.sh entrypoint.sh
 
+ADD rapi rapi
+RUN cd rapi && \
+    go build -v
+
 EXPOSE 80
+EXPOSE 9090
 EXPOSE 50000
 
 CMD [ "ash", "/home/rtorrent/entrypoint.sh" ]
