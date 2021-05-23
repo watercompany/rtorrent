@@ -18,11 +18,13 @@ The container:
 Example:
 
 ```
+DOWNLOAD_DIR=$(pwd)/download
 WATCH_DIR=$(pwd)/watch
 RUTORRENT_PORT=8080
 
 docker run --rm -it \
     -v ${WATCH_DIR}:/home/rtorrent/rtorrent/watch/start \
+    -v ${DOWNLOAD_DIR}:/home/rtorrent/rtorrent/download \
     -p ${RUTORRENT_PORT}:80 \
     rtorrent
 ```
